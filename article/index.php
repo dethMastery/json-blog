@@ -26,14 +26,18 @@ $decode = json_decode($call, true);
 
 <body>
     <header>
-        <?php
-        if ($decode[$id]['img'] === "") {
-            echo "<img src='../asset/no_img.png' class='card-img-top' alt='header-img'>";
-        } else {
-            echo "<img src='" . $decode[$id]['img'] . "' class='card-img-top' alt='header-img'>";
-        }
-        ?>
+        <div class="header-container">
+            <?php
+            if ($decode[$id]['img'] === "") {
+                echo "<img src='../asset/no_img.png' alt='header-img' class='header-img'>";
+            } else {
+                echo "<img src='" .$decode[$id]['img']. "' alt='header-img' class='header-img'>";
+            }
+            ?>
+        </div>
+    </header>
 
+    <article id="main-article" class="p-5">
         <h1 class="text-center">
             <strong>
                 <?php
@@ -41,9 +45,6 @@ $decode = json_decode($call, true);
                 ?>
             </strong>
         </h1>
-    </header>
-
-    <article id="main-article">
         <section class="container">
             <?php
             echo $decode[$id]['content'];

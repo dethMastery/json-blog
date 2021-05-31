@@ -35,7 +35,7 @@ $decode = json_decode($call);
             if ($b->img === "") {
                 echo "<img src='asset/no_img.png' class='card-img-top' alt='header-img'>";
             } else {
-                echo "<img src='" . $b->img . "' class='card-img-top' alt='header-img'>";
+                echo "<img src='".$b->img."' class='card-img-top' alt='header-img'>";
             }
             ?>
             <div class="card-body">

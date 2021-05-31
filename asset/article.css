@@ -11,6 +11,20 @@ article {
 }
 
 
+/* Header */
+
+.header-container {
+    width: 100%;
+    margin: 0;
+    height: 50vh;
+}
+
+.header-img {
+    width: 100%;
+    height: 100%;
+}
+
+
 /* Article */
 
 #article {
