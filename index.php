@@ -1,3 +1,8 @@
+<?php
+    $call = file_get_contents('backend/db/blog.json');
+    $decode = json_decode($call);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
