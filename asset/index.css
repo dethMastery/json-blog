@@ -9,3 +9,17 @@ p,
 article {
     font-family: 'Kanit', sans-serif;
 }
+
+
+/* Nav */
+
+.navbar {
+    font-size: 24px;
+}
+
+
+/* Color */
+
+.bg-alpha {
+    background-color: rgba(0, 0, 0, 0.6);
+}
