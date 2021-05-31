@@ -25,16 +25,18 @@ $decode = json_decode($call);
 </head>
 
 <body>
+
+    <!-- Article Listing -->
     <?php
-    foreach ($decode as $b) {
+        foreach ($decode as $b) {
     ?>
         <div class="card" style="width: 18rem;">
             <?php
-            if ($b->img === "") {
-                echo "<img src='asset/no_img.png' class='card-img-top' alt='header-img'>";
-            } else {
-                echo "<img src='" . $b->img . "' class='card-img-top' alt='header-img'>";
-            }
+                if ($b->img === "") {
+                    echo "<img src='asset/no_img.png' class='card-img-top' alt='header-img'>";
+                } else {
+                    echo "<img src='" . $b->img . "' class='card-img-top' alt='header-img'>";
+                }
             ?>
             <div class="card-body">
                 <h5 class="card-title">
@@ -49,17 +51,17 @@ $decode = json_decode($call);
                         echo $b->preview_c;
                     ?>
                 </p>
-                <form action="read_blog.php">
-                    <input type="text" value="<?php $b->id ?>" class="none">
+                <form action="read_blog.php" method="get">
+                    <input type="text" value="<?php echo $b->id ?>" class="none" name="id">
+                    <button type="submit" class="btn btn-primary">
+                        Read More..
+                    </button>
                 </form>
-
-                <a href="#" class="btn btn-primary">Read more..</a>
             </div>
         </div>
     <?php
-    }
+        }
     ?>
-
 
 </body>
 
