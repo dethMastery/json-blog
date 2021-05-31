@@ -32,6 +32,11 @@ article {
     font-size: 20px;
 }
 
+#about hr {
+    width: 10%;
+    margin-top: 0;
+}
+
 
 /* Footer */
 

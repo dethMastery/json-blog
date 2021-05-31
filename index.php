@@ -50,12 +50,18 @@
 
     <!-- Header -->
     <header>
-        
+
     </header>
 
     <!-- About -->
     <section id="about">
         <div class="container">
+            <h3>
+                <b>
+                    About
+                    <hr>
+                </b>
+            </h3>
             <p>
                 Hiya! I'm <strong>Detzz</strong> who is a Junior Front-End Developer. I'm tried to making something new for me whatever it sucks for someone who seeing this blog.
             </p>
