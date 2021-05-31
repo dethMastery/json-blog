@@ -28,30 +28,30 @@ $decode = json_decode($call);
 
     <!-- Article Listing -->
     <?php
-        foreach ($decode as $b) {
+    foreach ($decode as $b) {
     ?>
         <div class="card" style="width: 18rem;">
             <?php
-                if ($b->img === "") {
-                    echo "<img src='asset/no_img.png' class='card-img-top' alt='header-img'>";
-                } else {
-                    echo "<img src='" . $b->img . "' class='card-img-top' alt='header-img'>";
-                }
+            if ($b->img === "") {
+                echo "<img src='asset/no_img.png' class='card-img-top' alt='header-img'>";
+            } else {
+                echo "<img src='" . $b->img . "' class='card-img-top' alt='header-img'>";
+            }
             ?>
             <div class="card-body">
                 <h5 class="card-title">
                     <center>
                         <?php
-                            echo $b->title;
+                        echo $b->title;
                         ?>
                     </center>
                 </h5>
                 <p class="card-text">
                     <?php
-                        echo $b->preview_c;
+                    echo $b->preview_c;
                     ?>
                 </p>
-                <form action="read_blog.php" method="get">
+                <form action="article" method="get">
                     <input type="text" value="<?php echo $b->id ?>" class="none" name="id">
                     <button type="submit" class="btn btn-primary">
                         Read More..
@@ -60,9 +60,13 @@ $decode = json_decode($call);
             </div>
         </div>
     <?php
-        }
+    }
     ?>
 
+    <!-- Script Embed -->
+    <!-- Bootstrap Set up -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
 </body>
 
 </html>
