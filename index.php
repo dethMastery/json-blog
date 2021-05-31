@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog | Detzz.In.Th</title>
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="asset/logo.png" type="image/x-icon">
+
     <!-- Main Css -->
     <link rel="stylesheet" href="asset/index.css">
 
@@ -22,7 +25,7 @@
     <!-- Nav -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-alpha p-3">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Detzz</a>
+            <a class="navbar-brand" href="#"><img src="asset/logo.png" alt="logo" srcset="asset/logo.png" width="30px" height="auto"> Detzz</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -45,12 +48,17 @@
         </div>
     </nav>
 
+    <!-- Header Part -->
+    <header>
+        
+    </header>
+
     <!-- Footer-->
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-12 mb-2">
-                    
+
                 </div>
 
                 <div class="col-lg-3 col-md-6 col-12 mb-2">
