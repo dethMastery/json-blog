@@ -22,7 +22,7 @@
     <!-- Nav -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-alpha p-3">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#">Detzz</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -32,18 +32,37 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item" style="float: right;">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <!-- Footer-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12 mb-2">
+                    
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 mb-2">
+
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 mb-2">
+
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Script Embed -->
     <!-- Bootstrap Set up -->
