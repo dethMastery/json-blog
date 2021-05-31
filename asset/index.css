@@ -13,8 +13,12 @@ article {
 
 /* Nav */
 
+.navbar-brand {
+    font-size: 20px !important;
+}
+
 .navbar {
-    font-size: 24px;
+    font-size: 18px;
 }
 
 
