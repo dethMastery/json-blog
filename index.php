@@ -68,6 +68,11 @@
         </div>
     </section>
 
+    <!-- Lastest Post -->
+    <section id="lastest-post">
+
+    </section>
+
     <!-- Footer-->
     <footer>
         <div class="container">
