@@ -30,3 +30,7 @@ article {
 #article {
     font-size: 24px;
 }
+
+h1 hr {
+    width: 25%;
+}

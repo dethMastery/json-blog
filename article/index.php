@@ -31,19 +31,20 @@ $decode = json_decode($call, true);
             if ($decode[$id]['img'] === "") {
                 echo "<img src='../asset/no_img.png' alt='header-img' class='header-img'>";
             } else {
-                echo "<img src='" .$decode[$id]['img']. "' alt='header-img' class='header-img'>";
+                echo "<img src='" . $decode[$id]['img'] . "' alt='header-img' class='header-img'>";
             }
             ?>
         </div>
     </header>
 
     <article id="main-article" class="p-5">
-        <h1 class="text-center">
+        <h1 class="pb-3">
             <strong>
                 <?php
                 echo $decode[$id]['title'];
                 ?>
             </strong>
+            <hr>
         </h1>
         <section class="container">
             <?php
