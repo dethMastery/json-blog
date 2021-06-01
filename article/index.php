@@ -13,6 +13,9 @@ $decode = json_decode($call, true);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $decode[$id]['title']; ?> | Detzz.in.th</title>
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../asset/logo.png" type="image/x-icon">
+
     <!-- Main css -->
     <link rel="stylesheet" href="../asset/article.css">
 

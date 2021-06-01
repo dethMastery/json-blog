@@ -13,6 +13,9 @@ $decode = json_decode($call);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Content | Detzz.In.Th</title>
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="asset/logo.png" type="image/x-icon">
+
     <!-- Main Css -->
     <link rel="stylesheet" href="asset/blog.css">
 
@@ -35,7 +38,7 @@ $decode = json_decode($call);
             if ($b->img === "") {
                 echo "<img src='asset/no_img.png' class='card-img-top' alt='header-img'>";
             } else {
-                echo "<img src='".$b->img."' class='card-img-top' alt='header-img'>";
+                echo "<img src='" . $b->img . "' class='card-img-top' alt='header-img'>";
             }
             ?>
             <div class="card-body">
