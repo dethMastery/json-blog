@@ -19,6 +19,8 @@ article {
 
 .navbar {
     font-size: 18px;
+    background: rgba(15, 76, 129, 0.6);
+    ;
 }
 
 .fixed-top {
@@ -36,34 +38,64 @@ article {
     background-position: center;
 }
 
+.mid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
 .blacking {
     background: rgba(0, 0, 0, 0.6);
     width: 100%;
     height: 100%;
 }
 
+.sub-header {
+    color: lightgray;
+}
+
 
 /* About */
 
 #about {
-    padding: 4rem 0;
+    background: #0F4C81;
+    color: whitesmoke;
+    padding: 4rem 0 2rem 0;
     font-size: 20px;
 }
 
 #about hr {
-    width: 10%;
+    width: 8%;
     margin-top: 0;
 }
 
 
 /* Lastest Post */
 
+#lastest-post {
+    padding: 4rem 0 2rem 0;
+    font-size: 20px;
+}
+
+#lastest-post hr {
+    width: 16%;
+    margin-top: 0;
+}
+
 
 /* Footer */
 
+#footer {
+    color: white;
+    background: #0F4C81;
+}
 
-/* Color */
 
-.bg-alpha {
-    background-color: rgba(0, 0, 0, 0.6);
+/* Copyright */
+
+#copyright {
+    color: white;
+    background: #0F4C81;
 }
