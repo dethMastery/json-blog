@@ -3,7 +3,6 @@ $call = file_get_contents('backend/db/blog.json');
 $decode = json_decode($call);
 ?>
 
-้
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,41 +29,45 @@ $decode = json_decode($call);
 <body>
 
     <!-- Article Listing -->
-    <?php
-    foreach ($decode as $b) {
-    ?>
-        <div class="card" style="width: 18rem;">
+    <div class="container">
+        <div class="row">
             <?php
-            if ($b->img === "") {
-                echo "<img src='asset/no_img.png' class='card-img-top' alt='header-img'>";
-            } else {
-                echo "<img src='" . $b->img . "' class='card-img-top' alt='header-img'>";
+            foreach ($decode as $b) {
+            ?>
+                <div class="card col-md-4 col-sm-6 col-12">
+                    <?php
+                    if ($b->img === "") {
+                        echo "<img src='asset/no_img.png' class='card-img-top' alt='header-img'>";
+                    } else {
+                        echo "<img src='" . $b->img . "' class='card-img-top' alt='header-img'>";
+                    }
+                    ?>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <center>
+                                <?php
+                                echo $b->title;
+                                ?>
+                            </center>
+                        </h5>
+                        <p class="card-text">
+                            <?php
+                            echo $b->preview_c;
+                            ?>
+                        </p>
+                        <form action="article" method="get">
+                            <input type="text" value="<?php echo $b->id ?>" class="none" name="id">
+                            <button type="submit" class="btn btn-primary">
+                                Read More..
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            <?php
             }
             ?>
-            <div class="card-body">
-                <h5 class="card-title">
-                    <center>
-                        <?php
-                        echo $b->title;
-                        ?>
-                    </center>
-                </h5>
-                <p class="card-text">
-                    <?php
-                    echo $b->preview_c;
-                    ?>
-                </p>
-                <form action="article" method="get">
-                    <input type="text" value="<?php echo $b->id ?>" class="none" name="id">
-                    <button type="submit" class="btn btn-primary">
-                        Read More..
-                    </button>
-                </form>
-            </div>
         </div>
-    <?php
-    }
-    ?>
+    </div>
 
     <!-- Script Embed -->
     <!-- Bootstrap Set up -->

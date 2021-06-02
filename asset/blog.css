@@ -13,6 +13,12 @@ article {
 
 /* Article List */
 
+.card {
+    margin: 3px;
+    margin-bottom: 2rem!important;
+    width: 18rem!important;
+}
+
 
 /* Form */
 
