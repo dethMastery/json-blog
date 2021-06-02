@@ -6,7 +6,8 @@ div,
 section,
 header,
 p,
-article {
+article,
+footer {
     font-family: 'Kanit', sans-serif;
 }
 
@@ -19,8 +20,7 @@ article {
 
 .navbar {
     font-size: 18px;
-    background: rgba(15, 76, 129, 0.6);
-    ;
+    background: rgba(11, 54, 91, 0.6);
 }
 
 .fixed-top {
@@ -60,7 +60,7 @@ article {
 /* About */
 
 #about {
-    background: #0F4C81;
+    background: #0B365B;
     color: whitesmoke;
     padding: 4rem 0 2rem 0;
     font-size: 20px;
@@ -89,7 +89,8 @@ article {
 
 #footer {
     color: white;
-    background: #0F4C81;
+    background: #0B365B;
+    font-size: 24px;
 }
 
 
@@ -97,5 +98,15 @@ article {
 
 #copyright {
     color: white;
-    background: #0F4C81;
+    background: #0B365B;
+}
+
+#copyright a {
+    color: white;
+    text-decoration: none;
+}
+
+#copyright a:hover {
+    color: white;
+    text-decoration: underline;
 }

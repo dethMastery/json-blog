@@ -95,11 +95,11 @@ $decode = json_decode($call);
         </div>
         <div class="container">
             <?php
-                foreach ($post as $p) {
+            foreach ($post as $p) {
             ?>
 
             <?php
-                }
+            }
             ?>
         </div>
     </section>
@@ -124,8 +124,8 @@ $decode = json_decode($call);
     </footer>
 
     <!-- Copyright -->
-    <footer id="copyright" class="p-3 text-center">
-        &copy; <span id="copyright-year"></span>
+    <footer id="copyright" class="p-4 text-center">
+        &copy; <span id="copyright-year"></span> <a href="https://detzz.in.th" target="_blank">Suphakit P.</a> All Right Reserved
     </footer>
 
     <!-- Script Embed -->
