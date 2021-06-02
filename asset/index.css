@@ -75,6 +75,8 @@ footer {
 /* Lastest Post */
 
 #lastest-post {
+    background: rgba(11, 54, 91, 0.4);
+    color: black;
     padding: 4rem 0 2rem 0;
     font-size: 20px;
 }
