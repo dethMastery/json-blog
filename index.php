@@ -28,7 +28,7 @@
 
 <body>
     <!-- Nav -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-alpha p-3">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-alpha p-3 fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="asset/logo.png" alt="logo" srcset="asset/logo.png" width="30px" height="auto"> Detzz</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,7 +43,7 @@
                         <a class="nav-link" href="#">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="blog.php">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
@@ -55,7 +55,11 @@
 
     <!-- Header -->
     <header>
+        <div class="header-img">
+            <div class="blacking mid">
 
+            </div>
+        </div>
     </header>
 
     <!-- About -->
