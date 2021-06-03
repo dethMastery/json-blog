@@ -32,7 +32,8 @@ $decode = json_decode($call);
     <div class="container">
         <div class="row">
             <?php
-            foreach ($decode as $b) {
+            sort($decode->id, );
+            foreach ($decode as $b ) {
             ?>
                 <div class="card col-md-4 col-sm-6 col-12">
                     <?php
