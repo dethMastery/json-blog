@@ -1,6 +1,7 @@
 <?php
 $call = file_get_contents('backend/db/blog.json');
-$decode = json_decode($call);
+$out = json_decode($call);
+$decode = array_reverse($out);
 ?>
 
 <!DOCTYPE html>
