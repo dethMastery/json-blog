@@ -97,48 +97,46 @@ $decode = array_reverse($out);
         <div class="container">
             <div class="row">
                 <?php
+                $i = 0;
                 foreach ($decode as $b) {
+                    $i++;
                 ?>
-                    <div class="card col-md-4 col-sm-6 col-12">
-                        <?php
-                        if ($b->img === "") {
-                            echo "<img src='asset/no_img.png' class='card-img-top' alt='header-img'>";
-                        } else {
-                            echo "<img src='" . $b->img . "' class='card-img-top' alt='header-img'>";
-                        }
-                        ?>
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <center>
+                    <div class="card-con col-md-4 col-sm-6 col-12">
+                        <div class="card">
+                            <?php
+                            if ($b->img === "") {
+                                echo "<img src='asset/no_img.png' class='card-img-top' alt='header-img'>";
+                            } else {
+                                echo "<img src='" . $b->img . "' class='card-img-top' alt='header-img'>";
+                            }
+                            ?>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <center>
+                                        <?php
+                                        echo $b->title;
+                                        ?>
+                                    </center>
+                                </h5>
+                                <p class="card-text">
                                     <?php
-                                    echo $b->title;
+                                    echo $b->preview_c;
                                     ?>
-                                </center>
-                            </h5>
-                            <p class="card-text">
-                                <?php
-                                echo $b->preview_c;
-                                ?>
-                            </p>
-                            <form action="article" method="get">
-                                <input type="text" value="<?php echo $b->id ?>" class="none" name="id">
-                                <button type="submit" class="btn btn-primary">
-                                    Read More..
-                                </button>
-                            </form>
+                                </p>
+                                <form action="article" method="get">
+                                    <input type="text" value="<?php echo $b->id ?>" class="none" name="id">
+                                    <button type="submit" class="btn btn-primary">
+                                        Read More..
+                                    </button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 <?php
-                }
-                ?>
-
-                <?php
-                    for ($id = 0; $id <= 2; $x++) {
-                ?>
-                
-                                
-                <?php
+                    if ($i == 3) {
+                        break;
                     }
+                }
                 ?>
             </div>
         </div>
