@@ -143,19 +143,29 @@ $decode = array_reverse($out);
     </section>
 
     <!-- Footer-->
-    <footer id="footer">
+    <footer id="footer" class="pt-5 pb-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-12 mb-2">
-
+                <div class="col-lg-4 col-md-6 col-12 mb-2">
+                    <h4>
+                        <img src="asset/logo.png" alt="logo" width="30">
+                        Detzz
+                    </h4>
+                    <hr>
                 </div>
 
-                <div class="col-lg-3 col-md-6 col-12 mb-2">
-
+                <div class="col-lg-4 col-md-6 col-12 mb-2">
+                    <h4>
+                        Menu
+                    </h4>
+                    <hr>
                 </div>
 
-                <div class="col-lg-3 col-md-6 col-12 mb-2">
-
+                <div class="col-lg-4 col-md-6 col-12 mb-2">
+                    <h4>
+                        Social Media Link
+                    </h4>
+                    <hr>
                 </div>
             </div>
         </div>
