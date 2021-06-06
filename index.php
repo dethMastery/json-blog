@@ -161,6 +161,21 @@ $decode = array_reverse($out);
                         <img src="asset/logo.png" alt="logo" width="30">
                         Detzz
                     </h4>
+                    <hr>
+                    <ul>
+                        <li class="nav-item">
+                            Tel : <a href="tel:+66827187962">(+66) 82 718 7962</a>
+                        </li>
+                        <li class="nav-item">
+                            E-mail : <a href="mailto:contact@detzz.in.th">contact@detzz.in.th</a>
+                        </li>
+                        <li class="nav-item">
+                            
+                        </li>
+                        <li class="nav-item">
+
+                        </li>
+                    </ul>
                 </div>
 
                 <div class="col-md-4 col-12 mb-4">
