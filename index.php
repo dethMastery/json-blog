@@ -146,26 +146,63 @@ $decode = array_reverse($out);
     <footer id="footer" class="pt-5 pb-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-12 mb-2">
+                <div class="col-md-4 col-12 mb-4">
                     <h4>
                         <img src="asset/logo.png" alt="logo" width="30">
                         Detzz
                     </h4>
                     <hr>
+
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-12 mb-2">
+                <div class="col-md-4 col-12 mb-4">
                     <h4>
                         Menu
                     </h4>
                     <hr>
+                    <ul>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.php">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-12 mb-2">
+                <div class="col-md-4 col-12 mb-4">
                     <h4>
                         Social Media Link
                     </h4>
                     <hr>
+                    <ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Instagram
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Twitter
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Reddit
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

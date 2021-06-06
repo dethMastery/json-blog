@@ -119,6 +119,25 @@ footer {
     margin-top: 0;
 }
 
+#footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#footer ul li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+#footer ul {
+    list-style-type: none;
+}
+
+li {
+    font-size: 18px;
+    padding: 10px;
+}
+
 
 /* Copyright */
 
