@@ -40,14 +40,14 @@ $decode = array_reverse($out);
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
-                    <li class="nav-item" style="float: right;">
-                        <a class="nav-link" href="#">About</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.php">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="blog.php">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="contact.php">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -139,11 +139,21 @@ $decode = array_reverse($out);
                 }
                 ?>
             </div>
+            <div style="float: right;">
+                <h4>
+                    <a href="blog.php">
+                        <b>
+                            More post ->
+                        </b>
+                    </a>
+                </h4>
+            </div>
+            <div style="clear: both;"></div>
         </div>
     </section>
 
     <!-- Footer-->
-    <footer id="footer" class="pt-5 pb-5">
+    <footer id="footer" class="p-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-12 mb-4">
@@ -151,8 +161,6 @@ $decode = array_reverse($out);
                         <img src="asset/logo.png" alt="logo" width="30">
                         Detzz
                     </h4>
-                    <hr>
-
                 </div>
 
                 <div class="col-md-4 col-12 mb-4">
@@ -165,13 +173,13 @@ $decode = array_reverse($out);
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="about.php">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="blog.php">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="contact.php">Contact</a>
                         </li>
                     </ul>
                 </div>

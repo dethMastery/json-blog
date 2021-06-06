@@ -100,6 +100,16 @@ footer {
     display: none;
 }
 
+#lastest-post a {
+    color: black;
+    text-decoration: none;
+}
+
+#lastest-post a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
 
 /* Footer */
 
@@ -109,6 +119,7 @@ footer {
     font-size: 24px;
     width: 100%;
     text-align: left;
+    align-items: stretch;
 }
 
 #footer .row div {
