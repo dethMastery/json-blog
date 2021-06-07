@@ -86,7 +86,7 @@ if ($decode[$id]['img'] === "") {
             if ($decode[$id]['youtube_id'] === "") {
                 echo "<div class='blacking'></div>";
             } else {
-                echo "<iframe src='https://www.youtube.com/embed/" . $decode[$id]['youtube-video-id'] . "' frameborder='0' allow='accelerometer; encryped-media; picture-in-picture' allowfullscreen></iframe>";
+                echo "<iframe src='https://www.youtube.com/embed/".$decode[$id]['youtube_id']."' frameborder='0' allow='accelerometer; encryped-media; picture-in-picture' allowfullscreen></iframe>";
             };
             ?>
         </div>
