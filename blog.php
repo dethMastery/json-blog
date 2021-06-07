@@ -16,6 +16,10 @@ $decode = array_reverse($out);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Content | Detzz.In.Th</title>
 
+    <!-- Social Controling -->
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="asset/" />
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="<?php echo $m_call[0]['icon']; ?>" type="image/x-icon">
 
@@ -34,7 +38,7 @@ $decode = array_reverse($out);
         .header-img {
             background: url('<?php echo $m_call[0]['blog']['header-img']; ?>');
             width: 100%;
-            height: 100vh;
+            height: 50vh;
             background-position: center;
         }
     </style>
@@ -70,12 +74,24 @@ $decode = array_reverse($out);
     <!-- Header -->
     <header>
         <div class="header-img">
+            <div class="mid">
+                <h1 class="header text-white">
+                    <?php
+                    echo $m_call[0]['blog']['header'];
+                    ?>
+                </h1>
+                <h5 class="sub-header">
+                    <?php
+                    echo $m_call[0]['blog']['subheader'];
+                    ?>
+                </h5>
+            </div>
             <div class="blacking"></div>
         </div>
     </header>
 
     <!-- Article Listing -->
-    <div class="container">
+    <div class="container pt-5 pb-5">
         <div class="row">
             <?php
             foreach ($decode as $b) {
@@ -102,7 +118,7 @@ $decode = array_reverse($out);
                                 echo $b->preview_c;
                                 ?>
                             </p>
-                            <form action="article" method="get">
+                            <form action="article/" method="get">
                                 <input type="text" value="<?php echo $b->id ?>" class="none" name="id">
                                 <button type="submit" class="btn btn-primary">
                                     Read More..
