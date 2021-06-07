@@ -1,0 +1,81 @@
+/* Global Setting */
+
+body,
+a,
+div,
+section,
+header,
+p,
+article,
+footer {
+    font-family: 'Kanit', sans-serif;
+    color: whitesmoke;
+}
+
+body {
+    background: #0f0c29 !important;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29) !important;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29) !important;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 0;
+}
+
+
+/* Body */
+
+.main-container {
+    width: 100%;
+}
+
+.OwO {
+    width: 100%;
+}
+
+
+/* Modify */
+
+#modify {
+    padding: 3rem 0 3rem 0;
+}
+
+.col-8 .container {
+    text-align: center;
+}
+
+
+/* Form */
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+textarea {
+    text-align: left;
+}
+
+
+/* Footer */
+
+
+/* Copyright */
+
+#copyright {
+    color: black;
+    background: white;
+}
+
+#copyright a {
+    color: black;
+    text-decoration: none;
+}
+
+#copyright a:hover {
+    color: black;
+    text-decoration: underline;
+}
