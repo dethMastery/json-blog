@@ -5,10 +5,10 @@ if (!isset($_SESSION["login"]) && $_SESSION["login"] != true) {
     exit(0);
 }
 
-$main = file_get_contents('backend/db/main.json');
+$main = file_get_contents('db/main.json');
 $m_call = json_decode($main, true);
 
-$call = file_get_contents('backend/db/blog.json');
+$call = file_get_contents('db/blog.json');
 $out = json_decode($call);
 $decode = array_reverse($out);
 ?>
@@ -37,7 +37,51 @@ $decode = array_reverse($out);
 </head>
 
 <body>
-
+    <div class="main-container">
+        <div class="container">
+            <br>
+            <div class="row">
+                <div class="col-10">
+                    <h1>
+                        Backend Containment
+                    </h1>
+                </div>
+                <div class="col-2">
+                    <div class="d-grid gap-2">
+                        <a href="logout.php">
+                            <button class="OwO btn-lg btn btn-danger">
+                                Logout
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-4">
+                    <div class="d-grid gap-2">
+                        <a href="b-main.php">
+                            <button class="OwO btn btn-lg btn-primary">
+                                Main Editor
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-4">
+                    <div class="d-grid gap-2">
+                        <a href="b-blog.php">
+                            <button class="OwO btn btn-lg btn-primary">
+                                Blog Editor
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+    </div>
 
     <!-- Copyright -->
     <footer id="copyright" class="p-4 text-center">
