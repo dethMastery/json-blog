@@ -61,7 +61,7 @@ $decode = array_reverse($out);
                 <div class="col-1"></div>
                 <div class="col-4">
                     <div class="d-grid gap-2">
-                        <a href="b-main.php">
+                        <a href="../backend/b-main.php">
                             <button class="OwO btn btn-lg btn-primary">
                                 Main Editor
                             </button>
@@ -109,6 +109,8 @@ $decode = array_reverse($out);
                                             <input type="text" name="img" class="col-9" placeholder="IMG Link">
                                             <div class="col-12 text-dark">.</div>
                                             <input type="text" name="yt-id" class="col-12" placeholder="YT Video ID">
+                                            <div class="col-12 text-dark">.</div>
+                                            <input type="text" name="title" class="col-12" placeholder="Title">
                                             <div class="col-12 text-dark">.</div>
                                             <textarea name="pre-c" width="100%" rows="3" placeholder="Preview Context"></textarea>
                                             <div class="col-12 text-dark">.</div>
@@ -182,30 +184,62 @@ $decode = array_reverse($out);
                                         <?php echo $blog->preview_c; ?>
                                     </td>
                                     <td>
-                                        <?php echo $blog->content; ?>
+                                        <form action="b-blog-c-read.php" method="post">
+                                            <input type="text" name="id" class="none" value="<?php echo $blog->id ?>">
+                                            <button type="submit" class="btn btn-secondary" target="_blank">
+                                                READ CONTENT
+                                            </button>
+                                        </form>
                                     </td>
                                     <td>
                                         <ul>
-                                            <li>
-                                                <a href="<?php echo $blog->credit->link_1; ?>" target="_blank">
-                                                    Link 1
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="<?php echo $blog->credit->link_2; ?>" target="_blank">
-                                                    Link 2
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="<?php echo $blog->credit->link_3; ?>" target="_blank">
-                                                    Link 3
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="<?php echo $blog->credit->link_4; ?>" target="_blank">
-                                                    Link 4
-                                                </a>
-                                            </li>
+                                            <?php
+                                            if ($blog->credit->link_1 === "") {
+                                                echo "";
+                                            } else {
+                                                echo "<li>";
+                                                echo "<a href='" . $blog->credit->link_1 . "' target='_blank'>";
+                                                echo "Link 1";
+                                                echo "</a>";
+                                                echo "</li>";
+                                            }
+                                            ?>
+
+                                            <?php
+                                            if ($blog->credit->link_2 === "") {
+                                                echo "";
+                                            } else {
+                                                echo "<li>";
+                                                echo "<a href='" . $blog->credit->link_2 . "' target='_blank'>";
+                                                echo "Link 2";
+                                                echo "</a>";
+                                                echo "</li>";
+                                            }
+                                            ?>
+
+                                            <?php
+                                            if ($blog->credit->link_3 === "") {
+                                                echo "";
+                                            } else {
+                                                echo "<li>";
+                                                echo "<a href='" . $blog->credit->link_3 . "' target='_blank'>";
+                                                echo "Link 3";
+                                                echo "</a>";
+                                                echo "</li>";
+                                            }
+                                            ?>
+
+                                            <?php
+                                            if ($blog->credit->link_4 === "") {
+                                                echo "";
+                                            } else {
+                                                echo "<li>";
+                                                echo "<a href='" . $blog->credit->link_4 . "' target='_blank'>";
+                                                echo "Link 4";
+                                                echo "</a>";
+                                                echo "</li>";
+                                            }
+                                            ?>
                                         </ul>
                                     </td>
                                     <td>
@@ -254,6 +288,18 @@ $decode = array_reverse($out);
                 x.type = "text";
             } else {
                 x.type = "password";
+            }
+        }
+    </script>
+
+    <!-- Toggle Showing Content -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
             }
         }
     </script>
