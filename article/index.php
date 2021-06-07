@@ -83,7 +83,7 @@ if ($decode[$id]['img'] === "") {
     <header>
         <div class="header-container">
             <?php
-            if ($decode[$id]['youtube-video-id'] === "") {
+            if ($decode[$id]['youtube_id'] === "") {
                 echo "<div class='blacking'></div>";
             } else {
                 echo "<iframe src='https://www.youtube.com/embed/" . $decode[$id]['youtube-video-id'] . "' frameborder='0' allow='accelerometer; encryped-media; picture-in-picture' allowfullscreen></iframe>";
