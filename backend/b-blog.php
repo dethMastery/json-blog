@@ -161,11 +161,15 @@ $decode = array_reverse($out);
                                         </ul>
                                     </td>
                                     <td>
-                                        <form action="b-blog-del.php">
-
-                                        </form>
                                         <form action="b-blog-edit.php">
-                                            
+                                            <button class="OwO btn btn-warning" type="submit">
+                                                Edit
+                                            </button>
+                                        </form>
+                                        <form action="b-blog-del.php">
+                                            <button class="OwO btn btn-danger" type="submit">
+                                                Delete
+                                            </button>
                                         </form>
                                     </td>
                                 </tr>
