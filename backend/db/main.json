@@ -13,5 +13,9 @@
         "header-img": "asset/index-header.webp",
         "header": "Article Listing",
         "subheader": "From Lastest to Oldest"
+    },
+    "backend": {
+        "username": "",
+        "password": ""
     }
 }]
