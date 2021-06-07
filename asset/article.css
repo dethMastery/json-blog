@@ -11,15 +11,32 @@ article {
 }
 
 
-/* Header */
+/* Nav */
 
-.header-container {
-    width: 100%;
-    margin: 0;
-    height: 50vh;
+.navbar-brand {
+    font-size: 20px !important;
 }
 
-.header-img {
+.navbar {
+    font-size: 18px;
+    background: rgba(11, 54, 91, 0.6);
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+}
+
+
+/* Header */
+
+.blacking {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+}
+
+.header-container iframe {
     width: 100%;
     height: 100%;
 }

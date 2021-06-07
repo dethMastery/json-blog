@@ -18,7 +18,7 @@ $decode = array_reverse($out);
 
     <!-- Social Controling -->
     <meta property="og:type" content="article" />
-    <meta property="og:image" content="asset/" />
+    <meta property="og:image" content="asset/logo.png" />
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="<?php echo $m_call[0]['icon']; ?>" type="image/x-icon">

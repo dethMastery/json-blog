@@ -1,7 +1,8 @@
 [{
-    "title": "Blog | Detzz.In.Th",
+    "domain": "Detzz.In.Th",
     "icon": "asset/logo.png",
     "index": {
+        "title": "Blog | ",
         "header-img": "asset/index-header.webp",
         "header": "Blog.By.Detzz.Th",
         "subheader": "Junior Front-End Developer",
