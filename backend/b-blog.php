@@ -88,13 +88,42 @@ $decode = array_reverse($out);
                 <div class="row">
                     <div class="col-2"></div>
                     <div class="col-8">
-                        <?php
-                        foreach ($decode as $blog){
-                            
-                        ?>
-                        <?php
-                        }
-                        ?>
+                        <table style="width:100%">
+                            <tr>
+                                <th>
+                                    ID
+                                </th>
+                                <th>
+                                    IMG
+                                </th>
+                                <th>
+                                    YT Video ID
+                                </th>
+                                <th>
+                                    Title
+                                </th>
+                                <th>
+                                    Preview Content
+                                </th>
+                                <th>
+                                    Content
+                                </th>
+                                <th>
+                                    Credit
+                                </th>
+                            </tr>
+                            <?php
+                            foreach ($decode as $blog) {
+                            ?>
+                                <tr>
+                                    <td>Jill</td>
+                                    <td>Smith</td>
+                                    <td>50</td>
+                                </tr>
+                            <?php
+                            }
+                            ?>
+                        </table>
                     </div>
                     <div class="col-2"></div>
                 </div>

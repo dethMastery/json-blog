@@ -45,18 +45,19 @@ body {
 }
 
 
-/* Form */
+/* Table */
 
-input,
-textarea {
-    width: 100%;
-    padding: 8px;
-    border-radius: 15px;
-    text-align: center;
+table,
+th,
+td {
+    color: whitesmoke;
+    border: 1px solid black;
+    border-collapse: collapse;
 }
 
-textarea {
-    text-align: left;
+th,
+td {
+    padding: 15px;
 }
 
 
