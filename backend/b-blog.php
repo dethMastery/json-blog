@@ -84,11 +84,10 @@ $decode = array_reverse($out);
 
         <!-- Listing -->
         <section id="modify">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-2"></div>
-                    <div class="col-8">
-                        <table style="width:100%">
+                    <div class="col-12">
+                        <table>
                             <tr>
                                 <th>
                                     ID
@@ -111,21 +110,70 @@ $decode = array_reverse($out);
                                 <th>
                                     Credit
                                 </th>
+                                <th>
+                                    Controller
+                                </th>
                             </tr>
                             <?php
                             foreach ($decode as $blog) {
                             ?>
-                                <tr>
-                                    <td>Jill</td>
-                                    <td>Smith</td>
-                                    <td>50</td>
+                                <tr class="text-center">
+                                    <td>
+                                        <?php echo $blog->id ?>
+                                    </td>
+                                    <td>
+                                        <img src="<?php echo $blog->img; ?>" alt="img" width="150px" height="auto">
+                                    </td>
+                                    <td>
+                                        <?php echo $blog->youtube_id; ?>
+                                    </td>
+                                    <td>
+                                        <?php echo $blog->title; ?>
+                                    </td>
+                                    <td>
+                                        <?php echo $blog->preview_c; ?>
+                                    </td>
+                                    <td>
+                                        <?php echo $blog->content; ?>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>
+                                                <a href="<?php echo $blog->credit->link_1; ?>" target="_blank">
+                                                    <?php echo $blog->credit->link_1; ?>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="<?php echo $blog->credit->link_2; ?>" target="_blank">
+                                                    <?php echo $blog->credit->link_2; ?>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="<?php echo $blog->credit->link_3; ?>" target="_blank">
+                                                    <?php echo $blog->credit->link_3; ?>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="<?php echo $blog->credit->link_4; ?>" target="_blank">
+                                                    <?php echo $blog->credit->link_4; ?>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <form action="b-blog-del.php">
+
+                                        </form>
+                                        <form action="b-blog-edit.php">
+                                            
+                                        </form>
+                                    </td>
                                 </tr>
                             <?php
                             }
                             ?>
                         </table>
                     </div>
-                    <div class="col-2"></div>
                 </div>
             </div>
         </section>

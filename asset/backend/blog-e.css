@@ -47,6 +47,10 @@ body {
 
 /* Table */
 
+table {
+    width: 100%;
+}
+
 table,
 th,
 td {
