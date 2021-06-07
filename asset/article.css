@@ -51,3 +51,21 @@ article {
 h1 hr {
     width: 25%;
 }
+
+
+/* Copyright */
+
+#copyright {
+    color: white;
+    background: #0B365B;
+}
+
+#copyright a {
+    color: white;
+    text-decoration: none;
+}
+
+#copyright a:hover {
+    color: white;
+    text-decoration: underline;
+}
