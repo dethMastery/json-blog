@@ -142,7 +142,7 @@ $decode = array_reverse($out);
                                     echo $b->preview_c;
                                     ?>
                                 </p>
-                                <form action="article" method="get">
+                                <form action="article/" method="get">
                                     <input type="text" value="<?php echo $b->id ?>" class="none" name="id">
                                     <button type="submit" class="btn btn-primary">
                                         Read More..
