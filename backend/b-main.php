@@ -71,7 +71,7 @@ $decode = array_reverse($out);
                 <div class="col-2"></div>
                 <div class="col-4">
                     <div class="d-grid gap-2">
-                        <a href="b-blog.php">
+                        <a href="../backend/b-blog.php">
                             <button class="OwO btn btn-lg btn-primary">
                                 Blog Editor
                             </button>
