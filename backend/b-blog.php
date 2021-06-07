@@ -86,6 +86,54 @@ $decode = array_reverse($out);
         <section id="modify">
             <div class="container-fluid">
                 <div class="row">
+                    <!-- Adding Part -->
+                    <div class="container">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="OwO btn btn-primary" data-bs-toggle="modal" data-bs-target="#add">
+                            Add Content
+                        </button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="add" tabindex="-1" aria-labelledby="addModal" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header bg-dark">
+                                    <h5 class="modal-title text-white" id="exampleModalLabel">Adding Content</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <form action="b-blog-add.php" method="post" id="adding">
+                                    <div class="modal-body text-white bg-dark">
+                                        <div class="row">
+                                            <input type="number" name="id" class="col-2" placeholder="ID">
+                                            <span class="col-1"></span>
+                                            <input type="text" name="img" class="col-9" placeholder="IMG Link">
+                                            <div class="col-12 text-dark">.</div>
+                                            <input type="text" name="yt-id" class="col-12" placeholder="YT Video ID">
+                                            <div class="col-12 text-dark">.</div>
+                                            <textarea name="pre-c" width="100%" rows="3" placeholder="Preview Context"></textarea>
+                                            <div class="col-12 text-dark">.</div>
+                                            <textarea name="content" width="100%" rows="5" placeholder="Content"></textarea>
+                                            <div class="col-12 text-dark">.</div>
+                                            <span class="col-1">1.</span><input type="text" name="link-1" class="col-11" placeholder="Credit Link 1">
+                                            <div class="col-12 text-dark">.</div>
+                                            <span class="col-1">2.</span><input type="text" name="link-2" class="col-11" placeholder="Credit Link 2">
+                                            <div class="col-12 text-dark">.</div>
+                                            <span class="col-1">3.</span><input type="text" name="link-3" class="col-11" placeholder="Credit Link 3">
+                                            <div class="col-12 text-dark">.</div>
+                                            <span class="col-1">4.</span><input type="text" name="link-4" class="col-11" placeholder="Credit Link 4">
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer bg-dark">
+                                        <button type="button" class="btn btn-secondary" onclick="reset()">Reset</button>
+                                        <button type="submit" class="btn btn-primary">Added!!</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <div class="row">
                     <div class="col-12">
                         <table>
                             <tr>
@@ -140,33 +188,35 @@ $decode = array_reverse($out);
                                         <ul>
                                             <li>
                                                 <a href="<?php echo $blog->credit->link_1; ?>" target="_blank">
-                                                    <?php echo $blog->credit->link_1; ?>
+                                                    Link 1
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="<?php echo $blog->credit->link_2; ?>" target="_blank">
-                                                    <?php echo $blog->credit->link_2; ?>
+                                                    Link 2
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="<?php echo $blog->credit->link_3; ?>" target="_blank">
-                                                    <?php echo $blog->credit->link_3; ?>
+                                                    Link 3
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="<?php echo $blog->credit->link_4; ?>" target="_blank">
-                                                    <?php echo $blog->credit->link_4; ?>
+                                                    Link 4
                                                 </a>
                                             </li>
                                         </ul>
                                     </td>
                                     <td>
-                                        <form action="b-blog-edit.php">
+                                        <form action="b-blog-edit.php" method="post">
+                                            <input type="text" value="<?php echo $blog->id ?>" class="none">
                                             <button class="OwO btn btn-warning" type="submit">
                                                 Edit
                                             </button>
                                         </form>
-                                        <form action="b-blog-del.php">
+                                        <form action="b-blog-del.php" method="post">
+                                            <input type="text" value="<?php echo $blog->id ?>" class="none">
                                             <button class="OwO btn btn-danger" type="submit">
                                                 Delete
                                             </button>
@@ -205,6 +255,13 @@ $decode = array_reverse($out);
             } else {
                 x.type = "password";
             }
+        }
+    </script>
+
+    <!-- Reset Form -->
+    <script>
+        function reset() {
+            document.getElementById("adding").reset();
         }
     </script>
 

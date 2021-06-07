@@ -34,6 +34,27 @@ body {
 }
 
 
+/* Adding */
+
+.modal input {
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    color: black;
+    background: white;
+    border: none;
+}
+
+.modal textarea {
+    color: black;
+    background: white;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
 /* Modify */
 
 #modify {
@@ -42,6 +63,10 @@ body {
 
 .col-8 .container {
     text-align: center;
+}
+
+.none {
+    display: none;
 }
 
 
