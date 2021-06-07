@@ -31,13 +31,6 @@ footer {
 
 /* Header */
 
-.header-img {
-    background: url('index-header.webp');
-    width: 100%;
-    height: 100vh;
-    background-position: center;
-}
-
 .mid {
     position: absolute;
     top: 50%;

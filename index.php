@@ -1,4 +1,7 @@
 <?php
+$main = file_get_contents('backend/db/main.json');
+$m_call = json_decode($main, true);
+
 $call = file_get_contents('backend/db/blog.json');
 $out = json_decode($call);
 $decode = array_reverse($out);
@@ -11,10 +14,10 @@ $decode = array_reverse($out);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog | Detzz.In.Th</title>
+    <title><?php echo $m_call[0]['title']; ?></title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="asset/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="<?php echo $m_call[0]['icon']; ?>" type="image/x-icon">
 
     <!-- Main Css -->
     <link rel="stylesheet" href="asset/index.css">
@@ -25,13 +28,23 @@ $decode = array_reverse($out);
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- Style Control -->
+    <style>
+        .header-img {
+            background: url('<?php echo $m_call[0]['header-img']; ?>');
+            width: 100%;
+            height: 100vh;
+            background-position: center;
+        }
+    </style>
 </head>
 
 <body>
     <!-- Nav -->
     <nav class="navbar navbar-expand-lg navbar-dark p-3 fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="asset/logo.png" alt="logo" srcset="asset/logo.png" width="30px" height="auto"> Detzz</a>
+            <a class="navbar-brand" href="#"><img src="<?php echo $m_call[0]['icon']; ?>" alt="logo" srcset="asset/logo.png" width="30px" height="auto"> Detzz</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -59,10 +72,14 @@ $decode = array_reverse($out);
         <div class="header-img">
             <div class="mid">
                 <h1 class="header text-white">
-                    Blog.By.Detzz.Th
+                    <?php
+                    echo $m_call[0]['header'];
+                    ?>
                 </h1>
                 <h5 class="sub-header">
-                    Junior Front-End Developer
+                    <?php
+                    echo $m_call[0]['subheader'];
+                    ?>
                 </h5>
             </div>
             <div class="blacking"></div>
@@ -79,7 +96,9 @@ $decode = array_reverse($out);
                 </b>
             </h3>
             <p>
-                Hiya! I'm <strong>Detzz</strong> who is a Junior Front-End Developer. I'm tried to making something new for me whatever it sucks for someone who seeing this blog.
+                <?php
+                echo $m_call[0]['about'];
+                ?>
             </p>
         </div>
     </section>
@@ -158,22 +177,22 @@ $decode = array_reverse($out);
             <div class="row">
                 <div class="col-md-4 col-12 mb-4">
                     <h4>
-                        <img src="asset/logo.png" alt="logo" width="30">
+                        <img src="<?php echo $m_call[0]['icon']; ?>" alt="logo" width="30">
                         Detzz
                     </h4>
                     <hr>
                     <ul>
                         <li class="nav-item">
-                            Tel : <a href="tel:+66827187962">(+66) 82 718 7962</a>
+                            <a class="nav-link" target="_blank" href="tel:+66827187962">Tel. Number</a>
                         </li>
                         <li class="nav-item">
-                            E-mail : <a href="mailto:contact@detzz.in.th">contact@detzz.in.th</a>
+                            <a class="nav-link" target="_blank" href="mailto:contact@detzz.in.th">E-mail</a>
                         </li>
                         <li class="nav-item">
-                            
+                            <a class="nav-link" target="_blank" href="https://nc.detzz.in.th">Namecard</a>
                         </li>
                         <li class="nav-item">
-
+                            <a class="nav-link" target="_blank" href="https://detzz.in.th">Homepage</a>
                         </li>
                     </ul>
                 </div>
