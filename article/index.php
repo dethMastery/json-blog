@@ -1,4 +1,7 @@
 <?php
+$main = file_get_contents('backend/db/main.json');
+$m_call = json_decode($main, true);
+
 $id = $_GET['id'];
 $call = file_get_contents('../backend/db/blog.json');
 $decode = json_decode($call, true);

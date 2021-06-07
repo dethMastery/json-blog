@@ -32,7 +32,7 @@ $decode = array_reverse($out);
     <!-- Style Control -->
     <style>
         .header-img {
-            background: url('<?php echo $m_call[0]['header-img']; ?>');
+            background: url('<?php echo $m_call[0]['index']['header-img']; ?>');
             width: 100%;
             height: 100vh;
             background-position: center;
@@ -73,12 +73,12 @@ $decode = array_reverse($out);
             <div class="mid">
                 <h1 class="header text-white">
                     <?php
-                    echo $m_call[0]['header'];
+                    echo $m_call[0]['index']['header'];
                     ?>
                 </h1>
                 <h5 class="sub-header">
                     <?php
-                    echo $m_call[0]['subheader'];
+                    echo $m_call[0]['index']['subheader'];
                     ?>
                 </h5>
             </div>
@@ -97,7 +97,7 @@ $decode = array_reverse($out);
             </h3>
             <p>
                 <?php
-                echo $m_call[0]['about'];
+                echo $m_call[0]['index']['about'];
                 ?>
             </p>
         </div>
