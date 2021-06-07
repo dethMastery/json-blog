@@ -53,6 +53,23 @@ h1 hr {
 }
 
 
+/* Credit */
+
+h3 hr {
+    width: 10%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin: 0px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+
 /* Copyright */
 
 #copyright {

@@ -20,7 +20,7 @@ if ($decode[$id]['img'] === "") {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $decode[$id]['title']." | ".$m_call[0]['domain']; ?></title>
+    <title><?php echo $decode[$id]['title'] . " | " . $m_call[0]['domain']; ?></title>
 
     <!-- Social Controlling -->
     <meta property="og:type" content="article" />
@@ -55,7 +55,7 @@ if ($decode[$id]['img'] === "") {
     <nav class="navbar navbar-expand-lg navbar-dark p-3 fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="../">
-                <img src="<?php echo "../".$m_call[0]['icon']; ?>" alt="logo" width="30px" height="auto"> Detzz
+                <img src="<?php echo "../" . $m_call[0]['icon']; ?>" alt="logo" width="30px" height="auto"> Detzz
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -114,6 +114,30 @@ if ($decode[$id]['img'] === "") {
                 ?>
             </h5>
         </section>
+    </article>
+
+    <article id="credit" class="p-5">
+        <h3>
+            <span>Credits :</span>
+            <hr>
+        </h3>
+        <h4>
+            <ul>
+                <li>
+                    <a href="<?php echo $decode[$id]['credit']['link_1']; ?>" target="_blank"><?php echo $decode[$id]['credit']['link_1']; ?></a>
+                </li>
+                <li>
+                    <a href="<?php echo $decode[$id]['credit']['link_2']; ?>" target="_blank"><?php echo $decode[$id]['credit']['link_2']; ?></a>
+                </li>
+                <li>
+                    <a href="<?php echo $decode[$id]['credit']['link_3']; ?>" target="_blank"><?php echo $decode[$id]['credit']['link_3']; ?></a>
+                </li>
+                <li>
+                    <a href="<?php echo $decode[$id]['credit']['link_4']; ?>" target="_blank"><?php echo $decode[$id]['credit']['link_4']; ?></a>
+                </li>
+            </ul>
+        </h4>
+
     </article>
 
 
