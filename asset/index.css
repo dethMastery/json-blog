@@ -79,14 +79,12 @@ footer {
     margin-top: 0;
 }
 
-.row {
-    text-align: center;
-    align-items: center;
-    margin: 0;
-}
-
 .card-con {
     margin-bottom: 2rem!important;
+}
+
+.card {
+    height: 100%;
 }
 
 .none {
