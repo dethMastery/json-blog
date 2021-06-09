@@ -1,9 +1,9 @@
 <?php
-session_start();
-if (!isset($_SESSION["login"]) && $_SESSION["login"] != true) {
-    header("location: login.php");
-    exit(0);
-}
+                            session_start();
+                            if (!isset($_SESSION["login"]) && $_SESSION["login"] != true) {
+                                header("location: ../backend/login.php");
+                                exit(0);
+                            }
 
 $main = file_get_contents('db/main.json');
 $m_call = json_decode($main, true);
@@ -244,13 +244,13 @@ $decode = array_reverse($out);
                                     </td>
                                     <td>
                                         <form action="b-blog-edit.php" method="post">
-                                            <input type="text" value="<?php echo $blog->id ?>" class="none">
+                                            <input type="text" value="<?php echo $blog->id ?>" class="none" name="id">
                                             <button class="OwO btn btn-warning" type="submit">
                                                 Edit
                                             </button>
                                         </form>
                                         <form action="b-blog-del.php" method="post">
-                                            <input type="text" value="<?php echo $blog->id ?>" class="none">
+                                            <input type="text" value="<?php echo $blog->id ?>" class="none" name="id">
                                             <button class="OwO btn btn-danger" type="submit">
                                                 Delete
                                             </button>
