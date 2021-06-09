@@ -67,19 +67,5 @@
             "link_3": "c",
             "link_4": "d"
         }
-    },
-    {
-        "id": "5",
-        "img": "https://s3.amazonaws.com/gather.fandalism.com/3000x3000-2978870--DC7E92E1-DF62-4A9A-A82D7ACE26BEC46A--1622172827403--Cover.jpg",
-        "youtube_id": "Ra9ARcxk2EU",
-        "title": "ออมนิเเทรป",
-        "preview_c": "ออมนิเเทรป",
-        "content": "ออมนิเเทรป",
-        "credit": {
-            "link_1": "https://www.youtube.com/watch?v=Ra9ARcxk2EU",
-            "link_2": "",
-            "link_3": "",
-            "link_4": ""
-        }
     }
 ]
