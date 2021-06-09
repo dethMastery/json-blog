@@ -1,4 +1,10 @@
 <?php
+session_start();
+if (!isset($_SESSION["login"]) && $_SESSION["login"] != true) {
+    header("location: ../backend/login.php");
+    exit(0);
+}
+
     $call = file_get_contents('db/blog.json');
     $decode = json_decode($call);
 
