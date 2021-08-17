@@ -14,8 +14,17 @@
         "header": "Article Listing",
         "subheader": "From Lastest to Oldest"
     },
+    "contact": {
+        "title": "Article | ",
+        "header-img": "asset/index-header.webp",
+        "header": "My Contact",
+        "subheader": "To have a contact to me"
+    },
     "about": {
-        "title": "About | "
+        "title": "About | ",
+        "header-img": "asset/index-header.webp",
+        "header": "About ME",
+        "subheader": "Most content that I'm think you want to know about me~"
     },
     "backend": {
         "title": "Backend | ",
