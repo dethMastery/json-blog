@@ -37,7 +37,50 @@ $m_call = json_decode($main, true);
 </head>
 
 <body>
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark p-3 fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="<?php echo $m_call[0]['icon']; ?>" alt="logo" srcset="asset/logo.png" width="30px" height="auto"> Detzz</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.php">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.php">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Header -->
+    <header>
+        <div class="header-img">
+            <div class="mid">
+                <h1 class="header text-white">
+                    <?php
+                    echo $m_call[0]['contact']['header'];
+                    ?>
+                </h1>
+                <h5 class="sub-header">
+                    <?php
+                    echo $m_call[0]['contact']['subheader'];
+                    ?>
+                </h5>
+            </div>
+            <div class="blacking"></div>
+        </div>
+    </header>
 </body>
 
 </html>
